@@ -1,7 +1,7 @@
-import { OrbitControls } from '@react-three/drei'
-import { Canvas } from '@react-three/fiber'
-import './App.css'
-import './folio/src/index.js'
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import "./App.css";
+import "./folio/src/index.js";
 
 function ThreeScene() {
   return (
@@ -11,7 +11,7 @@ function ThreeScene() {
       <pointLight position={[-3, -3, 2]} />
       <OrbitControls />
     </Canvas>
-  )
+  );
 }
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
     <div className="App h-screen">
       <ThreeScene />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
