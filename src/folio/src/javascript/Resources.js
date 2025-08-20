@@ -4,7 +4,7 @@ import Loader from './Utils/Loader.js'
 import EventEmitter from './Utils/EventEmitter.js'
 
 // Matcaps
-import matcapBeigeSource from '../models/matcaps/beige.png'
+import   matcapBeigeSource from '../models/matcaps/beige.png'
 import matcapBlackSource from '../models/matcaps/black.png'
 import matcapOrangeSource from '../models/matcaps/orange.png'
 import matcapRedSource from '../models/matcaps/red.png'

@@ -44,11 +44,11 @@ export default class Shadows
 
             this.debugFolder.addColor(this, 'color').onChange(() =>
             {
-                this.materials.base.uniforms.uColor.value = new THREE.Color(this.color)
+                this.materials.base.uniforms.uColor.value = new THREE.Color(this.color).convertLinearToSRGB()
 
                 for(const _shadow of this.items)
                 {
-                    _shadow.material.uniforms.uColor.value = new THREE.Color(this.color)
+                    _shadow.material.uniforms.uColor.value = new THREE.Color(this.color).convertLinearToSRGB()
                 }
             })
         }
@@ -141,7 +141,7 @@ export default class Shadows
         // Base
         this.materials.base = new ShadowMaterial()
         this.materials.base.depthWrite = false
-        this.materials.base.uniforms.uColor.value = new THREE.Color(this.color)
+        this.materials.base.uniforms.uColor.value = new THREE.Color(this.color).convertLinearToSRGB()
         this.materials.base.uniforms.uAlpha.value = 0
         this.materials.base.uniforms.uFadeRadius.value = 0.35
     }
