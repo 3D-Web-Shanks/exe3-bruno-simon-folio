@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 import Materials from './Materials.js'
-import Floor from './Floor.js'
+// import Floor from './Floor.js'
 import Shadows from './Shadows.js'
 import Physics from './Physics.js'
 import Zones from './Zones.js'
@@ -52,7 +52,7 @@ export default class
         // this.setAxes()
         this.setSounds()
         this.setControls()
-        this.setFloor()
+        // this.setFloor()
         this.setAreas()
         this.setStartingScreen()
     }
@@ -281,14 +281,14 @@ export default class
         })
     }
 
-    setFloor()
-    {
-        this.floor = new Floor({
-            debug: this.debugFolder
-        })
+    // setFloor()
+    // {
+    //     this.floor = new Floor({
+    //         debug: this.debugFolder
+    //     })
 
-        this.container.add(this.floor.container)
-    }
+    //     this.container.add(this.floor.container)
+    // }
 
     setShadows()
     {
