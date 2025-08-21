@@ -23,6 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# src/folio
+# 忽略 src/folio/ 目录及其所有子目录下的所有 .js 文件
+src/folio/**/*.js
 
 .eslintrc
